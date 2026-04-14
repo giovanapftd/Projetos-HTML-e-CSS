@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Arquitedoces</title>
+</head>
+<body></body>
+    <header class="navbar">
+        <a href="#inicio" class="logo-container">
+            <div class="logo-wrapper">
+                <svg class="logo-ring" viewBox="0 0 46 46">
+                    <circle cx="23" cy="23" r="21"/>
+                </svg>
+                <img src="imagens/logo.png" alt="Logo Arquitedoces" class="logo">
+            </div>
+                <h1 class="brand-name">Arquitedoces</h1>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardápio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const logo = document.querySelector('.logo-container');
+        const circle = document.querySelector('.logo-ring circle');
+
+        logo.addEventListener('mouseenter', () => {
+            circle.style.strokeDashoffset = '0';
+        });
+
+        logo.addEventListener('mouseleave', () => {
+            circle.style.strokeDashoffset = '132';
+        });
+    </script>
+
+    <section id="inicio" class="hero">
+        <div class="inicio">
+            <h1>Arquitedoces</h1>
+                <p>Conheça nossas sobremesas feitas com presição estrutural e imaginação sem limites!</p>
+                <a href="#cardápio" class="btn-cardapio">Explorar Cardápio</a>
+        </div>
+    </section>
+
+</body>
+</html>
